@@ -2,11 +2,11 @@
 #define CSurveillanceMesure_h
 #include "Arduino.h"
 
-typedef class 
+class CSurveillanceMesure
 {
       public:
       
-      CSurveillanceMesure(float valdefaut);
+      CSurveillanceMesure(int valdefaut);
       bool mesurer();
       
       private:
@@ -15,6 +15,6 @@ typedef class
         int nbMesures;
         
 
-}CSurveillanceMesure;
+};
 
 #endif

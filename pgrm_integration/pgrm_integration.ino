@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h>
+//#include <SoftwareSerial.h>
 #include "Arduino.h"
 #include "CSurveillanceMesure.h"
 
@@ -13,18 +13,18 @@ void setup() {
 void loop() {
 bool verif;
 int test = 0;
-int x = 0;
+//int x = 0;
 
-if (x == 0)
-{
-CSurveillanceMesure mesure(1.11);
-x = 1;
-}
+//if (x == 0)
+//{
+CSurveillanceMesure mesure(-1);
+//x = 1;
+//}
 
 verif = mesure.mesurer();
 while (verif==false)
      {
-        serial.println("mesure echouee");
+        //serial.println("mesure echouee");
         verif = mesure.mesurer();
      }
   

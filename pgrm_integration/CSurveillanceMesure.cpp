@@ -1,8 +1,8 @@
-#include <SoftwareSerial.h>
+//#include <SoftwareSerial.h>
 #include "Arduino.h"
 #include "CSurveillanceMesure.h"
 
-CSurveillanceMesure::CSurveillanceMesure(float valdef)
+CSurveillanceMesure::CSurveillanceMesure(int valdef)
 {
   
   int i = 0; //compteur
