@@ -1,13 +1,14 @@
+#include <SoftwareSerial.h>
 #include "Arduino.h"
 #include "CSurveillanceMesure.h"
 
-CSurveillanceMesure::CSurveillanceMesure(int valdefaut)
+CSurveillanceMesure::CSurveillanceMesure(float valdef)
 {
   
   int i = 0; //compteur
     while (i<10)
     {
-        tabMesures[i] = valdefaut; //on initialise le tableau de mesures avec la valeur par défaut
+        tabMesures[i] = valdef; //on initialise le tableau de mesures avec la valeur par défaut
         i++;
     }
     nbMesures = 0; //on initialise le nombre de valeurs a 0

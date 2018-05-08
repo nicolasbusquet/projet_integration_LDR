@@ -1,3 +1,4 @@
+#include <SoftwareSerial.h>
 #include "Arduino.h"
 #include "CSurveillanceMesure.h"
 
@@ -16,7 +17,7 @@ int x = 0;
 
 if (x == 0)
 {
-CSurveillanceMesure mesure(-1);
+CSurveillanceMesure mesure(1.11);
 x = 1;
 }
 
@@ -28,6 +29,6 @@ while (verif==false)
      }
   
   // Envoi la mesure au PC pour affichage et attends 250ms
-  Serial.println(valeur);
+  //Serial.println(valeur);
   delay(250);
 }

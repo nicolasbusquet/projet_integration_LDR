@@ -6,7 +6,7 @@ typedef class
 {
       public:
       
-      CSurveillanceMesure(int valdefaut);
+      CSurveillanceMesure(float valdefaut);
       bool mesurer();
       
       private:
