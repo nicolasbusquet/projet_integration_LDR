@@ -1,4 +1,4 @@
-//#include <SoftwareSerial.h>
+#include <SoftwareSerial.h>
 #include "Arduino.h"
 #include "CSurveillanceMesure.h"
 

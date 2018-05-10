@@ -1,4 +1,4 @@
-//#include <SoftwareSerial.h>
+#include <SoftwareSerial.h>
 #include "Arduino.h"
 #include "CSurveillanceMesure.h"
 
@@ -34,6 +34,7 @@ bool CSurveillanceMesure::mesurer()
     else //si le tableau n'est pas plein
     {
         tabMesures[nbMesures] = analogRead(A0); //on range la mesure dans le tableau
+        Serial.println(tabMesures[nbMesures]);
         nbMesures = nbMesures + 1; //on incremente le nombre de mesure
         return true; //tout s'est bien passe
     }
